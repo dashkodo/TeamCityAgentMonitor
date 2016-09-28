@@ -62,10 +62,12 @@ var checkIfAllBuildsReceived = function() {
 }
 
 var updateBottomPanel = function(builds) {
+  
   $("#tsm_build_init").remove();
   removeBuildsWhichNoLongerExist(builds);
   updateFailedAndNeverRunBuilds(builds);
-  if ($("div[id^=tsm_b_").length) {
+  
+  if ($("div[id^=tsm_b_]").length) {
     $("div#tsm_success").remove();
   }
   else {
@@ -85,9 +87,13 @@ var updateFailedAndNeverRunBuilds = function(builds) {
 }
 
 var removeBuildsWhichNoLongerExist = function(builds) {
-  $.each($("div[id^=tsm_b_"), function(index, div) {
+  
+   $.each($("div[id^=tsm_b_]"), function(index, div) {
+    
     div = $(div);
     
+    
+
     var stillExists = false;
     var btId = div.attr("id").replace("tsm_b_", "");
     for (var i = 0; i < builds.length; i++) {

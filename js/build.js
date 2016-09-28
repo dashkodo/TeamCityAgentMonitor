@@ -79,7 +79,7 @@ function Build(rawBuild) {
 	}
 
 	this.includesMuted = function() {
-		return rawBuild.statusText && rawBuild.statusText.includes("muted");
+		return rawBuild.statusText && rawBuild.statusText.indexOf("muted")>=0;
 	}
 
 	this.construct(rawBuild);

@@ -126,19 +126,19 @@ body {
 }
 
 .tsm_green {
-  background: linear-gradient(to bottom, #4cab4c 0%,#327032 100%);
+  background:  #4cab4c;
 }
 
 .tsm_red {
-  background: linear-gradient(to bottom,  #c0392b 0%,#932222 100%);
+  background: #c0392b;
 }
 
 .tsm_orange {
-  background: linear-gradient(to bottom, #D6671E 0%,#8A3D0C 100%);
+  background: #D6671E;
 }
 
 .tsm_gray {
-  background: linear-gradient(to bottom,  #808080 0%,#5e5e5e 100%);
+  background:  #808080 0%;
 }
 
 /*
@@ -158,7 +158,7 @@ body {
 }
 
 .tsm_topLeft {
-  font-size  : 2.5rem;
+  font-size  : 4rem;
   float      : left;
 }
 
